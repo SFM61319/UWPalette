@@ -5,9 +5,9 @@
     "MaxAttributesPerLine": 1,
     "NewlineExemptionElements": "RadialGradientBrush, GradientStop, LinearGradientBrush, ScaleTransfom, SkewTransform, RotateTransform, TranslateTransform, Trigger, Condition, Setter",
     "SeparateByGroups": false,
-    "AttributeIndentation": 0,
+    "AttributeIndentation": 4,
     "AttributeIndentationStyle": 1,
-    "RemoveDesignTimeReferences":  false,
+    "RemoveDesignTimeReferences": false,
     "EnableAttributeReordering": true,
     "AttributeOrderingRuleGroups": [
         "x:Class",
@@ -24,7 +24,7 @@
     ],
     "FirstLineAttributes": "",
     "OrderAttributesByName": true,
-    "PutEndingBracketOnNewLine": false,
+    "PutEndingBracketOnNewLine": true,
     "RemoveEndingTagOfEmptyElement": true,
     "SpaceBeforeClosingSlash": true,
     "RootElementLineBreakRule": 0,
@@ -37,5 +37,5 @@
     "ThicknessSeparator": 2,
     "ThicknessAttributes": "Margin, Padding, BorderThickness, ThumbnailClipMargin",
     "FormatOnSave": true,
-    "CommentPadding": 2,
+    "CommentPadding": 2
 }
