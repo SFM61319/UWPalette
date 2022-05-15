@@ -6,12 +6,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Style="{StaticResource PageStyle}"
     mc:Ignorable="d">
-    <Grid
-        x:Name="ContentArea"
-        Margin="{StaticResource MediumLeftRightMargin}">
+    <Grid x:Name="ContentArea" Margin="{StaticResource MediumLeftRightMargin}">
         <TextBlock
             x:Name="PassedArguments"
-            TextWrapping="Wrap"
-            Style="{StaticResource BodyTextStyle}" />
+            Style="{StaticResource BodyTextStyle}"
+            TextWrapping="Wrap" />
     </Grid>
 </Page>

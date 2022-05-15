@@ -13,14 +13,12 @@
         </Grid.RowDefinitions>
 
         <TextBlock
-            Grid.Row="0"
             x:Uid="Main_Title"
+            Grid.Row="0"
             Style="{StaticResource PageTitleStyle}" />
-        <Grid
-            Grid.Row="1" 
-            Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
+        <Grid Grid.Row="1" Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}">
             <!--
-                The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content. 
+                The SystemControlPageBackgroundChromeLowBrush background represents where you should place your content.
                 Place your content here.
             -->
         </Grid>
