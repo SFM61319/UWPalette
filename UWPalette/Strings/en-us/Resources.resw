@@ -125,8 +125,4 @@
     <value>The modern color palette generator for Windows.</value>
     <comment>Application description</comment>
   </data>
-  <data name="Main_Title.Text" xml:space="preserve">
-    <value>Main</value>
-    <comment>Page title for MainPage</comment>
-  </data>
 </root>
