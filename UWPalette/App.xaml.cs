@@ -3,6 +3,9 @@
 using UWPalette.Services;
 
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Core;
+using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 
 namespace UWPalette
@@ -30,6 +33,10 @@ namespace UWPalette
             if (!args.PrelaunchActivated)
             {
                 await ActivationService.ActivateAsync(args);
+
+                // Extend Mica app backdrop material into the app's
+                // title bar by extending the app's view into it.
+                ExtendAppViewIntoTitleBar();
             }
         }
 
@@ -47,6 +54,20 @@ namespace UWPalette
         private ActivationService CreateActivationService()
         {
             return new ActivationService(this, typeof(Views.MainPage));
+        }
+
+        /// <summary>
+        /// Extends the app's view into the app's core title bar.
+        /// </summary>
+        private void ExtendAppViewIntoTitleBar()
+        {
+            CoreApplication.GetCurrentView().TitleBar.ExtendViewIntoTitleBar = true;
+            var titleBar = ApplicationView.GetForCurrentView().TitleBar;
+
+            // Make the title bar button backgrounds transparent
+            // to fit in with the app view background/backdrop.
+            titleBar.ButtonBackgroundColor = Colors.Transparent;
+            titleBar.ButtonInactiveBackgroundColor = Colors.Transparent;
         }
     }
 }
